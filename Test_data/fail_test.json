@@ -1,0 +1,25 @@
+{
+  "query_select_data": "SELECT payment_time, amount FROM my_database.payment1",
+  "path_expected_graph_image": "Validation_data/fail_test_image.png",
+  "path_generated_graph_image": "screenshots/produced_graph_fail_test.png",
+  "query_drop_table": "DROP TABLE IF EXISTS payment1;",
+  "query_create_table": "CREATE TABLE IF NOT EXISTS payment1 (id INT AUTO_INCREMENT PRIMARY KEY,payment_time DATETIME NOT NULL,amount DECIMAL(10, 2) NOT NULL);",
+  "query_insert_record": "INSERT INTO payment1 (payment_time, amount)VALUES (:payment_time, :amount);",
+  "table_data_records": [
+        {"payment_time": "2025-01-10 10:00:00", "amount": 450.00},
+        {"payment_time": "2025-01-10 11:59:00", "amount": 257.00},
+        {"payment_time": "2025-01-10 12:35:00", "amount": 100.00},
+        {"payment_time": "2025-01-10 13:26:00", "amount": 250.00},
+        {"payment_time": "2025-01-10 14:00:00", "amount": 500.00},
+        {"payment_time": "2025-01-10 15:00:00", "amount": 2984.00},
+        {"payment_time": "2025-01-10 16:43:00", "amount": 700.00},
+        {"payment_time": "2025-01-10 17:24:00", "amount": 800.00},
+        {"payment_time": "2025-01-10 18:01:00", "amount": 3288.00},
+        {"payment_time": "2025-01-10 19:03:00", "amount": 1000.00},
+        {"payment_time": "2025-01-10 20:00:00", "amount": 1100.00},
+        {"payment_time": "2025-01-10 21:46:55", "amount": 30.00},
+        {"payment_time": "2025-01-10 22:05:01", "amount": 700.00},
+        {"payment_time": "2025-01-10 23:03:44", "amount": 1400.00},
+        {"payment_time": "2025-01-11 23:47:00", "amount": 300.00}
+    ]
+}

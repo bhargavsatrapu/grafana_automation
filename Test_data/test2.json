@@ -1,0 +1,33 @@
+{
+  "query_select_data": "SELECT time, visitors, total_sales FROM my_database.mall_records",
+  "path_expected_graph_image": "Validation_data/expected_graph_test2.png",
+  "path_generated_graph_image": "screenshots/produced_graph_test_2.png",
+  "query_drop_table": "DROP TABLE IF EXISTS mall_records;",
+  "query_create_table": "CREATE TABLE IF NOT EXISTS mall_records (id INT AUTO_INCREMENT PRIMARY KEY,time DATETIME NOT NULL,visitors INT NOT NULL,total_sales DECIMAL(10, 2) NOT NULL);",
+  "query_insert_record": "INSERT INTO mall_records (time, visitors, total_sales)VALUES (:time, :visitors, :total_sales);",
+  "table_data_records": [
+    {"time": "2025-01-10 10:15:33", "visitors": 120, "total_sales": 3400.00},
+    {"time": "2025-01-10 11:23:45", "visitors": 95, "total_sales": 2500.00},
+    {"time": "2025-01-10 12:02:12", "visitors": 150, "total_sales": 4300.00},
+    {"time": "2025-01-10 13:45:09", "visitors": 140, "total_sales": 4100.00},
+    {"time": "2025-01-10 14:32:27", "visitors": 200, "total_sales": 6000.00},
+    {"time": "2025-01-10 15:17:55", "visitors": 180, "total_sales": 5600.00},
+    {"time": "2025-01-10 16:48:14", "visitors": 175, "total_sales": 5300.00},
+    {"time": "2025-01-10 17:05:33", "visitors": 220, "total_sales": 7100.00},
+    {"time": "2025-01-10 18:12:40", "visitors": 250, "total_sales": 8900.00},
+    {"time": "2025-01-10 19:34:56", "visitors": 230, "total_sales": 7600.00},
+    {"time": "2025-01-10 20:29:18", "visitors": 190, "total_sales": 6400.00},
+    {"time": "2025-01-10 21:11:05", "visitors": 100, "total_sales": 2100.00},
+    {"time": "2025-01-10 22:08:49", "visitors": 80, "total_sales": 1700.00},
+    {"time": "2025-01-10 23:42:33", "visitors": 50, "total_sales": 900.00},
+    {"time": "2025-01-11 10:24:41", "visitors": 110, "total_sales": 3200.00},
+    {"time": "2025-01-11 11:19:22", "visitors": 150, "total_sales": 4100.00},
+    {"time": "2025-01-11 12:46:10", "visitors": 200, "total_sales": 5400.00},
+    {"time": "2025-01-11 13:33:45", "visitors": 180, "total_sales": 4900.00},
+    {"time": "2025-01-11 14:11:59", "visitors": 220, "total_sales": 6800.00},
+    {"time": "2025-01-11 15:54:30", "visitors": 250, "total_sales": 8700.00},
+    {"time": "2025-01-11 16:25:18", "visitors": 300, "total_sales": 9500.00},
+    {"time": "2025-01-11 17:48:33", "visitors": 190, "total_sales": 7000.00},
+    {"time": "2025-01-11 18:36:42", "visitors": 210, "total_sales": 8100.00}
+]
+}
