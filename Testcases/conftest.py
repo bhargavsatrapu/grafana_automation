@@ -15,7 +15,6 @@ def setup():
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):
-    print("Hi Anna")
     outcome = yield
     report = outcome.get_result()
     if 'setup' in item.funcargs:
@@ -34,8 +33,6 @@ def pytest_runtest_makereport(item):
                 date = date.replace(',', '_')
                 date = date.replace('.', '_')
                 file_path = os.getcwd() + "/reports/Screenshots/" + file_list1[-1] + file_list1[1] + date + '.png'
-                print("aki")
-                print(file_path)
                 page.screenshot(path=file_path)
                 if file_path:
                     html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
